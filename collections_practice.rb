@@ -115,7 +115,7 @@ def organize_schools(schools)
     city = value[:location]
     new_hash[city] = key
   end
-end
+
 
 puts new_hash
 new_hash

@@ -92,7 +92,7 @@ end
 
 # def organize_schools(schools)
 #   organized_schools = {}
-# 
+#
 #   flat = schools.values.each_with_index do |element, index|
 #     location = element[:location]
 #     #organized_schools[location] = []
@@ -113,6 +113,6 @@ new_hash = {}
   schools.each do |key, value|
     new_hash[value] = key
   end
-puts new_hash  
+puts new_hash
 new_hash
-end  
+end

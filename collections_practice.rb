@@ -114,6 +114,7 @@ def organize_schools(schools)
   schools.each do |key, value|
     city = value[:location]
     new_hash[city] = []
-new_hash.merge(schools[key])
-
+    new_hash[city].push(key(value))
+  endnew
+  new_hash
 end

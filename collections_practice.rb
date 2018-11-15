@@ -10,7 +10,7 @@ def begins_with_r(tools)
  true
 end
 
-n
+
 def first_wa(tools)
   tools.find do |word|
     word.to_s.start_with?("wa")

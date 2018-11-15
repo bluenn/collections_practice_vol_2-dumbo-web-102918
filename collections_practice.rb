@@ -29,31 +29,31 @@ def remove_non_strings(tools)
  end
 end
 
-def count_elements(tools)
-  count = 0
-  dupes = []
-  match = ""
-  tools.select do |element|
-    value = element[:name]
-    hash = {}
-   if count == 0
-     count = 1
-     hash[:name] = value
-     match = value
-     hash[:count] = 1
-     dupes.push(hash)
-   else
-     if match == value
-       count += 1
-       hash[:count] = count
-       puts hash
-       dupes[0][:count] = count
-      end
-      count = 0
-    end
- end
- dupes
-end
+# def count_elements(tools)
+#   count = 0
+#   dupes = []
+#   match = ""
+#   tools.select do |element|
+#     value = element[:name]
+#     hash = {}
+#    if count == 0
+#      count = 1
+#      hash[:name] = value
+#      match = value
+#      hash[:count] = 1
+#      dupes.push(hash)
+#    else
+#      if match == value
+#        count += 1
+#        hash[:count] = count
+#        puts hash
+#        dupes[0][:count] = count
+#       end
+#       count = 0
+#     end
+#  end
+#  dupes
+# end
 
 def count_elements(tools)
 hash = {}
@@ -62,7 +62,7 @@ dupes = []
     hash[element] = tools.count(element)
   end
   dupes << hash
-end    
+end
 
 
 

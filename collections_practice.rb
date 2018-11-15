@@ -56,23 +56,11 @@ end
 # end
 
 def count_elements(tools)
-hash = {}
-dupes = []
-count = 0
-hash = {}
-  sep = tools.uniq do |element|
-    #hash[:name] = element[:value]
-    hash = {}
-    count = tools.count(element)
-    hash[:name] = element[:name]
-    hash[:count] = count
-    dupes << hash
-    count = 0
-  end
-  puts sep
-  dupes
-  binding.pry
-  #dupes << hash
+tools.inject(Hash.new(0)) do  |hash, item| 
+  hash[item[:count]] += 1; 
+  hash 
+end  
+
 end
 
 

@@ -118,7 +118,7 @@ def organize_schools(schools)
      if place == city
        new_hash[city].push(key)
      end
-   end    
+   end
   end
 puts new_hash
 new_hash

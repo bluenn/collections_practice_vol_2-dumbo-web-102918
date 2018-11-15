@@ -118,5 +118,5 @@ def organize_schools(schools)
     new_hash[city].push(key)
     new_hash[city].compact
   end
-
+   new_hash
 end

@@ -118,6 +118,6 @@ def organize_schools(schools)
     new_hash[city].push(key)
     new_hash[city].push(schools.key(value))
   end
-   new_hash[:chicago].uniq
+   new_hash[_key].uniq
    new_hash
 end

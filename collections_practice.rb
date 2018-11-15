@@ -64,7 +64,7 @@ count = 0
     hash[:name] = element[:value]
     hash[:element] = tools.count(element)
     dupes << hash
-    count = 0  
+    count = 0
   end
 
 end

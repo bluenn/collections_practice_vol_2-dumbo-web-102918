@@ -115,7 +115,7 @@ def organize_schools(schools)
     city = value[:location]
     temp_array.push[key]
     new_hash[city] = []
-    new_hash[city].push(key)
+    new_hash[city].push(temp_array)
   end
 puts new_hash
 new_hash

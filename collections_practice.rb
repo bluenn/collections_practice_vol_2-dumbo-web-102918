@@ -90,19 +90,29 @@ def find_cool(cool)
   end
 end
 
+# def organize_schools(schools)
+#   organized_schools = {}
+# 
+#   flat = schools.values.each_with_index do |element, index|
+#     location = element[:location]
+#     #organized_schools[location] = []
+#     temp_array = []
+#     key = schools.keys[index]
+#     temp_array.push(key)
+# binding.pry
+#     #organized_schools[location].push([temp_array])
+#   end
+#   puts flat
+#   organized_schools
+#   binding.pry
+#  end
+
 def organize_schools(schools)
   organized_schools = {}
-
-  flat = schools.values.each_with_index do |element, index|
-    location = element[:location]
-    #organized_schools[location] = []
-    temp_array = []
-    key = schools.keys[index]
-    temp_array.push(key)
-binding.pry
-    #organized_schools[location].push([temp_array])
+new_hash = {}
+  schools.each do |key, value|
+    new_hash[value] = key
   end
-  puts flat
-  organized_schools
-  binding.pry
- end
+puts new_hash  
+new_hash
+end  

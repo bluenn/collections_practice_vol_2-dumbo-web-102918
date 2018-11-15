@@ -66,6 +66,7 @@ hash = {}
   end
   puts sep
   dupes
+  binding.pry
   #dupes << hash
 end
 

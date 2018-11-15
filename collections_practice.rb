@@ -65,8 +65,8 @@ new_hash = {}
   new_hash = hash.each do |key, count|
     new_hash[:name]  = key[value]
     new_hash[:count] = count
-  end  
-  
+  end
+
 end
 
 

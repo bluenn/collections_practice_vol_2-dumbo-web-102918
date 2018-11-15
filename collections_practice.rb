@@ -117,5 +117,5 @@ def organize_schools(schools)
     new_hash[city].push(schools.key(value))
     new_hash[city].push(key)
   end
-  new_hash
+  new_hash.compaq
 end

@@ -58,7 +58,7 @@ end
 def count_elements(tools)
   count = 0
   hash = tools.inject(Hash.new(0)) do  |hash, item|
-    hash[:item]+= 1;
+    hash[item]+= 1;
     hash
   end
 end

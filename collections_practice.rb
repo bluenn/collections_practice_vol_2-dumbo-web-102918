@@ -62,7 +62,7 @@ hash = tools.inject(Hash.new(0)) do  |hash, item|
   hash
 end
 hash_new
-hash.each do |key, value|
+hash_new = hash.each do |key, value|
   hash_new[:name] = key
   hash_new[:count] = value
 end

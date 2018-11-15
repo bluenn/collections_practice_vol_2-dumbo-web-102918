@@ -60,13 +60,13 @@ hash = {}
 dupes = []
 count = 0
 hash = {}
-  tools.map do |element|
+  tools.uniq do |element|
     hash[:name] = element[:value]
     hash[:count] = tools.count(element)
-    dupes << hash
+    #dupes << hash
     #count = 0
   end
-
+  dupes << hash
 end
 
 

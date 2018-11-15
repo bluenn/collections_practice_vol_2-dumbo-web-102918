@@ -119,7 +119,7 @@ def organize_schools(schools)
     if value.include?(new_hash[key])
       new_hash[key].push(school)
     end
-  end    
+  end
 puts new_hash
 new_hash
 end

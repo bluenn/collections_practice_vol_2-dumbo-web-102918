@@ -10,6 +10,12 @@ def begins_with_r(tools)
  true
 end
 
+def contain_a(tools)
+  tools.select do |element|
+    element.include?("a")
+  end
+end
+
 
 def first_wa(tools)
   tools.find do |word|

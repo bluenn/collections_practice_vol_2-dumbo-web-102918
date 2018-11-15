@@ -60,7 +60,7 @@ hash = {}
 dupes = []
 count = 0
   tools.uniq do |element|
-    hash[count] = tools.count(element)
+    hash[:count] = tools.count(element)
   end
   dupes << hash
 end

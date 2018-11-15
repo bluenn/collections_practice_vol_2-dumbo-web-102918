@@ -116,6 +116,7 @@ def organize_schools(schools)
     new_hash[city] = []
     new_hash[city].push(schools.key(value))
     new_hash[city].push(key)
+    new_hash[city].compact
   end
-  new_hash.compact
+
 end

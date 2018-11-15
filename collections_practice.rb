@@ -110,14 +110,15 @@ end
 def organize_schools(schools)
   organized_schools = {}
   new_hash = {}
-  temp_array = []
+
   schools.each do |key, value|
     city = value[:location]
-    if value.include?(city)
-      temp_array.push(key)
-    end
     new_hash[city] = []
-    new_hash[city].push(temp_array)
+    key.each do |location, place|
+     if place == city
+       new_hash[city].push(key)
+     end
+   end    
   end
 puts new_hash
 new_hash

@@ -114,8 +114,9 @@ def organize_schools(schools)
   schools.each do |key, value|
     city = value[:location]
     new_hash[city] = []
-    #new_hash[city].push(schools.key(value))
+    
     new_hash[city].push(key)
+    new_hash[city].push(schools.key(value))
     new_hash[city].uniq
   end
    new_hash

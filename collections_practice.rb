@@ -64,6 +64,7 @@ hash = {}
     #hash[:name] = element[:value]
     count = tools.count(element)
     hash[:count] = count
+    count = 0
   end
   puts sep
   dupes

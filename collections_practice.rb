@@ -98,7 +98,6 @@ def organize_schools(schools)
     #organized_schools[location] = []
     temp_array = []
     key = schools.keys[index]
-    value = schools.values[index]
     temp_array.push(key)
 
     #organized_schools[location].push([temp_array])

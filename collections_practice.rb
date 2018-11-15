@@ -61,7 +61,7 @@ def count_elements(tools)
     value = item[:name]
     hash[:name][value]+= 1;
     hash
-  end  
+  end
 end
 
 

@@ -115,6 +115,6 @@ def organize_schools(schools)
     city = value[:location]
     new_hash[city] = key
   end
-new_hash.merge(schools)
+new_hash.merge(schools.keys)
 
 end

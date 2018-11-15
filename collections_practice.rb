@@ -118,6 +118,8 @@ def organize_schools(schools)
     new_hash[city].push(key)
     new_hash[city].push(schools.key(value))
   end
-   new_hash[_key].uniq
-   new_hash
+   new_hash.each do |key, value|
+     value.uniq
+   end
+    
 end

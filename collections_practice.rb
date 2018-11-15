@@ -59,8 +59,8 @@ def count_elements(tools)
 hash = {}
 dupes = []
 count = 0
+hash = {
   tools.uniq do |element|
-    hash = {}
     hash[:name] = element[:value]
     hash[:count] = tools.count(element)
     dupes << hash

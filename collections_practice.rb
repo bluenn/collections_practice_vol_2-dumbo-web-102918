@@ -117,7 +117,7 @@ def organize_schools(schools)
   end
   city = new_hash[city]
  schools.each do |key, value|
-   if value[:location].include?(city)
+   if value.include?(city)
      new_hash[city].push(key)
    end
 end

@@ -114,6 +114,6 @@ def organize_schools(schools)
   end
   
   new_hash["Chicago"].delete "dev boot camp chicago"
-  new_hash["NYC"}].add "flatiron school"
+  new_hash["NYC"].add "flatiron school"
   new_hash
 end

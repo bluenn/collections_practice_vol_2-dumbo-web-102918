@@ -90,38 +90,36 @@ def find_cool(cool)
   end
 end
 
+
 # def organize_schools(schools)
 #   organized_schools = {}
-#
-#   flat = schools.values.each_with_index do |element, index|
-#     location = element[:location]
-#     #organized_schools[location] = []
-#     temp_array = []
-#     key = schools.keys[index]
-#     temp_array.push(key)
-# binding.pry
-#     #organized_schools[location].push([temp_array])
+#   new_hash = {}
+# 
+#   schools.each do |key, value|
+#     city = value[:location]
+#     new_hash[city] = []
+# 
+#     new_hash[city].push(key)
+#     new_hash[city].push(schools.key(value))
 #   end
-#   puts flat
-#   organized_schools
-#   binding.pry
-#  end
+#   
+#   new_hash["NYC"] = new_hash["NYC"].insert(1,"flatiron school").reverse
+#   new_hash["SF"] = new_hash["SF"].reverse
+#   new_hash["Chicago"].delete_at(1)
+#   new_hash
+# end
+
 
 def organize_schools(schools)
-  organized_schools = {}
   new_hash = {}
-
-  schools.each do |key, value|
-    city = value[:location]
-    new_hash[city] = []
-
-    new_hash[city].push(key)
-    new_hash[city].push(schools.key(value))
+  schools.each do |school, location|
+    city = location[:location]
+    if new_hash[city]
+      new_hash[city] << school
+    else
+      new_hash[city] = []
+        new_hash[city] << school
+    end
   end
-
-  #new_hash["Chicago"].delete_at(1)
-  new_hash["NYC"] = new_hash["NYC"].insert(1,"flatiron school").reverse
-  new_hash["SF"] = new_hash["SF"].reverse
-  new_hash["Chicago"].delete_at(1)
   new_hash
 end

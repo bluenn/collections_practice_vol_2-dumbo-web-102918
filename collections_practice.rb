@@ -61,7 +61,7 @@ dupes = []
 count = 0
 hash = {}
   sep = tools.uniq do |element|
-    hash[:name] = element[value]
+    hash[:name] = element[:value]
     hash[:count] = tools.count(element)
   end
   sep

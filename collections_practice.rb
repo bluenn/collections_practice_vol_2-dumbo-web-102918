@@ -100,7 +100,7 @@ def organize_schools(schools)
     key = schools.keys[index]
     value = schools.value[index]
     temp_array.push(key)
-    
+
     #organized_schools[location].push([temp_array])
   end
   puts flat

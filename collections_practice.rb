@@ -64,10 +64,10 @@ count = 0
     hash = {}
     hash[:name] = element
     hash[:count] = tools.count(element)
-    #dupes << hash
+    dupes << hash
     count = 0
   end
-  dupes << hash
+  #dupes << hash
 end
 
 

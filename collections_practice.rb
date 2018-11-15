@@ -61,11 +61,8 @@ def count_elements(tools)
     hash[item]+= 1;
     hash
   end
-new_hash = {}
-  new_hash = hash.each do |key, count|
-    new_hash[:name]  = key
-    new_hash[:count] = count
-  end
+dupes = []
+dupes.push(hash)
 
 end
 

@@ -120,6 +120,6 @@ def organize_schools(schools)
   end
 
   #new_hash["Chicago"].delete_at(1)
-  new_hash["NYC"].push("flatiron school")
+  new_hash["NYC"].unshift("flatiron school")
   new_hash
 end

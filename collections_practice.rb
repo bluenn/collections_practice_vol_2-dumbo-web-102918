@@ -111,7 +111,8 @@ def organize_schools(schools)
   organized_schools = {}
 new_hash = {}
   schools.each do |key, value|
-    new_hash[value] = key
+    city = value[:location]
+    new_hash[city] = key
   end
 puts new_hash
 new_hash

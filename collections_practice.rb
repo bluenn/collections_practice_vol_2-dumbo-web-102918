@@ -65,6 +65,8 @@ def merge_data(keys, data)
      keys[index].merge(value)
      binding.pry
    #merge data with keys and then collect,
+  # each value is {:awesomeness=>10, :height=>"74", :last_name=>"johnson"}
+  #keys is [{:first_name=>"blake"}, {:first_name=>"ashley"}] but merge by index 
    #so merge {first_name => "blake"} with
   #  {
   #    "blake" => {

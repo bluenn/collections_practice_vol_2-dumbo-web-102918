@@ -63,6 +63,7 @@ def merge_data(keys, data)
   #second array is keys
    data[0].values.map.with_index do |value, index|
      keys[index].merge(value)
+     binding.pry
    #merge data with keys and then collect,
    #so merge {first_name => "blake"} with
   #  {
@@ -94,15 +95,15 @@ end
 # def organize_schools(schools)
 #   organized_schools = {}
 #   new_hash = {}
-# 
+#
 #   schools.each do |key, value|
 #     city = value[:location]
 #     new_hash[city] = []
-# 
+#
 #     new_hash[city].push(key)
 #     new_hash[city].push(schools.key(value))
 #   end
-#   
+#
 #   new_hash["NYC"] = new_hash["NYC"].insert(1,"flatiron school").reverse
 #   new_hash["SF"] = new_hash["SF"].reverse
 #   new_hash["Chicago"].delete_at(1)

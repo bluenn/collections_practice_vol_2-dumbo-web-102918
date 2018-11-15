@@ -63,7 +63,7 @@ def count_elements(tools)
   end
 new_hash = {}
   new_hash = hash.each do |key, count|
-    new_hash[:name]  = key[value]
+    new_hash[:name]  = key
     new_hash[:count] = count
   end
 

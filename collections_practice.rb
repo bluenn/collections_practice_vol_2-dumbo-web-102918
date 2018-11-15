@@ -64,7 +64,8 @@ hash = {}
     hash[:name] = element[:value]
     hash[:count] = tools.count(element)
   end
-  sep
+  puts sep
+  dupes
   #dupes << hash
 end
 

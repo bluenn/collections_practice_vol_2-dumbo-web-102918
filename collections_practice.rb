@@ -10,13 +10,7 @@ def begins_with_r(tools)
  true
 end
 
-def contain_a(tools)
-  tools.select do |element|
-  element.include?("a")
-  #element.match(/a/)
-  end
-end
-
+n
 def first_wa(tools)
   tools.find do |word|
     word.to_s.start_with?("wa")
@@ -118,8 +112,7 @@ def organize_schools(schools)
     new_hash[city].push(key)
     new_hash[city].push(schools.key(value))
   end
-   new_hash.each do |key, value|
-     value.uniq
-   end
-    
+  ew_hash["Chicago"].delete "dev boot camp chicago"
+  new_hash["NYC"}].add "flatiron school"
+  new_hash
 end
